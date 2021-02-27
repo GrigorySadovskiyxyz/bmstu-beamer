@@ -1,33 +1,38 @@
-\documentclass{beamer}
+\documentclass[10pt]{beamer}
 \usepackage[utf8]{inputenc}
-% \usetheme{Madird}
-% \usecolortheme{beaver}
+\usepackage[english,russian]{babel}
+\usepackage[T1,T2A]{fontenc}
+\usepackage{lipsum}
+% \usepackage[ragged2e]\justifying
+\usetheme{Warsaw}
 
-% Титульная страница
-\title{BMSTU presentation}
-\subtitle{This is our subtitle}
-\author[Sadovskiy, Doe]
-{G.~Sadovskiy\inst{1} \and J.~Doe\inst{2}}
-\institute{
-\inst{1}
-Faculty of EBM-6
-University 1 
-\and
-\inst{2}
-Faculty of EBM-5,
-University 2
-}
 
-\date{2021}
 
 \begin{document}
+
+% Титульная страница
+\title{Слайд презентации}
+\subtitle{This is our subtitle }
+\author[Садовский, Петров]
+{Г.Л.~Садовский\inst{1} \and В.В.~Петров\inst{2}}
+\institute{
+\inst{1}
+Каф. ИБМ-6 МГТУ им. Н.Э. Баумана
+\and
+\inst{2}
+Каф. ИБМ-6 МГТУ им. Н.Э. Баумана
+}
+
+\date[ISPN ’80]{27th International Symposium of Prime Numbers}
+
+
     
 \begin{frame}{}
 \titlepage
 \end{frame}
 
-\begin{frame}{First Slide}
-    This is the text of our second Slide
+\begin{frame}[c]{First Slide}
+    This is the text of our second Slide \texttt{beamer}
 \end{frame}
 
 \begin{frame}{Second Slide}
