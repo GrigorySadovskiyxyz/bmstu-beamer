@@ -18,3 +18,8 @@ clean:
 	rm -f *.dvi
 	rm -f *.fdb_latexmk
 	rm -f *.fls
+
+git:
+	git add --all
+	git commit -m "$m"
+	git push -u origin main
