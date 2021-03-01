@@ -1,19 +1,28 @@
+% Последняя обновленная версия доступна
+% https://github.com/GrigorySadovskiyxyz/bmstu-beamer
+
+% Preambule
+
 \documentclass[aspectratio=169]{beamer} % 16:9 aspect ratio
 \usepackage[utf8]{inputenc} % utf8 package
 \usepackage[english,russian]{babel} % Added Russian and English
-\usepackage[T1,T2A]{fontenc}
+% \usepackage{fontspec}
 \usepackage{lipsum} % dummy text (can be erased)
 \usepackage{textpos} % package for the positioning
+\usepackage{xcolor} % package for the colors
 
 \usetheme{metropolis}
+
+
+
+
 \setbeamercovered{transparent}
 
-% Лого
-
+% Лого в нижнем углу
 % \logo{\includegraphics[height=0.8cm]{images/logo-IBM6-square-blue.png}}
 
 
-% position the logo
+% Position the logo (top right corner)
 \addtobeamertemplate{frametitle}{}{%
 \begin{textblock*}{100mm}(\textwidth,-1cm)
 \includegraphics[height=1cm,width=1cm,keepaspectratio]{images/logo-IBM6-square-blue.png}
@@ -29,15 +38,13 @@
 % Титульная страница
 \title{Слайд презентации}
 \subtitle{}
-\author[Садовский, Петров]
-{Г.Л.~Садовский\inst{1} \and В.В.~Петров\inst{2}}
+\author[Садовский, Вашлаев]
+{Г.Л.~Садовский\inst{1} \and А.Д.~Вашлаев\inst{1}}
 \institute{
 \inst{1}
 Каф. ИБМ-6 МГТУ им. Н.Э. Баумана
-\and
-\inst{2}
-Каф. ИБМ-6 МГТУ им. Н.Э. Баумана
 }
+
 
 \date[ISPN ’80]{27th International Symposium of Prime Numbers}
 
