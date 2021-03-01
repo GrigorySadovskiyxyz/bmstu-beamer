@@ -1,16 +1,23 @@
-\documentclass[10pt]{beamer}
-\usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
+\documentclass[aspectratio=169]{beamer} % 16:9 aspect ratio
+\usepackage[utf8]{inputenc} % utf8 package
+\usepackage[english,russian]{babel} % Added Russian and English
 \usepackage[T1,T2A]{fontenc}
-\usepackage{lipsum}
+\usepackage{lipsum} % dummy text (can be erased)
+\usepackage{textpos} % package for the positioning
 
-
-\usetheme{Warsaw}
+\usetheme{metropolis}
+\setbeamercovered{transparent}
 
 % Лого
 
-\logo{\includegraphics[height=0.8cm]{images/logo-IBM6-square-blue.png}}
+% \logo{\includegraphics[height=0.8cm]{images/logo-IBM6-square-blue.png}}
 
+
+% position the logo
+\addtobeamertemplate{frametitle}{}{%
+\begin{textblock*}{100mm}(\textwidth,-1cm)
+\includegraphics[height=1cm,width=1cm,keepaspectratio]{images/logo-IBM6-square-blue.png}
+\end{textblock*}}
 
 
 
@@ -21,7 +28,7 @@
 
 % Титульная страница
 \title{Слайд презентации}
-\subtitle{This is our subtitle}
+\subtitle{}
 \author[Садовский, Петров]
 {Г.Л.~Садовский\inst{1} \and В.В.~Петров\inst{2}}
 \institute{

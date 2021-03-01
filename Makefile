@@ -18,6 +18,7 @@ clean:
 	rm -f *.dvi
 	rm -f *.fdb_latexmk
 	rm -f *.fls
+	rm -f *.synctex.gz
 
 git:
 	git add --all
