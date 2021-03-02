@@ -6,12 +6,19 @@
 \documentclass[aspectratio=169]{beamer} % 16:9 aspect ratio
 \usepackage[utf8]{inputenc} % utf8 package
 \usepackage[english,russian]{babel} % Added Russian and English
-% \usepackage{fontspec}
+%\usepackage{fontspec}
 \usepackage{lipsum} % dummy text (can be erased)
 \usepackage{textpos} % package for the positioning
 \usepackage{xcolor} % package for the colors
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage{biblatex}
+%\addbibresource{citations.bib}
 
-\usetheme{metropolis}
+
+%Using a defailt outer theme to begin with and remove the navigation symbols
+\useoutertheme[subsection=false]{smoothbars}
+\setbeamertemplate{navigation symbols}{}
 
 
 
@@ -24,7 +31,7 @@
 
 % Position the logo (top right corner)
 \addtobeamertemplate{frametitle}{}{%
-\begin{textblock*}{100mm}(\textwidth,-1cm)
+\begin{textblock*}{100mm}(\textwidth,-1,2cm)
 \includegraphics[height=1cm,width=1cm,keepaspectratio]{images/logo-IBM6-square-blue.png}
 \end{textblock*}}
 
@@ -46,7 +53,9 @@
 }
 
 
-\date[ISPN ’80]{27th International Symposium of Prime Numbers}
+\date{\today}
+\subject{Дисциплина}
+\keywords{один, два, три}
 
 
     
