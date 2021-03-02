@@ -19,6 +19,8 @@ clean:
 	rm -f *.fdb_latexmk
 	rm -f *.fls
 	rm -f *.synctex.gz
+	rm -f *.bcf
+	rm -f *.run.xml
 
 git:
 	git add --all
